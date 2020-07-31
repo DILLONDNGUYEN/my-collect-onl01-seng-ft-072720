@@ -35,4 +35,4 @@ def my_collect(array)
   name_collection
 end
 
-my_collect(list) {|i| i.split(" ").first}
+my_collect(array) {|i| i.split(" ").first}
