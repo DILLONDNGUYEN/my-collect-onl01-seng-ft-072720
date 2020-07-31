@@ -11,16 +11,28 @@
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 
+#def my_collect(array)
+  #my_collect(array) do |name|
+   #name.split("").first
+#end
+
+
+
+
+
+#collection = ['ruby', 'javascript', 'python', 'objective-c']
+#my_collect(collection) do |lang|
+  #lang.upcase
+#end
+
 def my_collect(array)
-  my_collect(array) do |name|
-    name.split("").first
+  i = 0
+  name_collection = []
+  while i < array.length
+    name_collection.push yield(array[i])
+    i += 1
+  end
+  name_collection
 end
 
-
-
-
-
-collection = ['ruby', 'javascript', 'python', 'objective-c']
-my_collect(collection) do |lang|
-  lang.upcase
-end
+my_collect(list) {|i| i.split(" ").first}
