@@ -8,9 +8,6 @@
 #Should return:["Tim", "Tom", "Jim"]
 #
 #
-
-array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-
 #def my_collect(array)
   #my_collect(array) do |name|
    #name.split("").first
@@ -21,6 +18,7 @@ array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
   #lang.upcase
 #end
 
+array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 def my_collect(array)
   i = 0
   name_collection = []
